@@ -1,0 +1,36 @@
+{
+    "host": "0.0.0.0",
+    "port": 8000,
+    "models": [
+      {
+        "model": "models/Meta-Llama-3-8B-Instruct-Q4_K_M.gguf",
+        "model_alias": "llama-3-8b",
+        "chat_format": "chatml",
+        "n_gpu_layers": -1,
+        "offload_kqv": true,
+        "n_threads": 12,
+        "n_batch": 512,
+        "n_ctx": 8192
+      },
+      {
+        "model": "models/mistral-7b-instruct-v0.1.Q4_K_M.gguf",
+        "model_alias": "mixtral",
+        "chat_format": "chatml",
+        "n_gpu_layers": -1,
+        "offload_kqv": true,
+        "n_threads": 12,
+        "n_batch": 512,
+        "n_ctx": 2048
+      },
+      {
+        "model": "models/Meta-Llama-3-8B-Instruct-Q4_K_M.gguf",
+        "model_alias": "llama-3-8b-function-calling",
+        "chat_format": "chatml-function-calling",
+        "n_gpu_layers": -1,
+        "offload_kqv": true,
+        "n_threads": 12,
+        "n_batch": 512,
+        "n_ctx": 8192
+      }
+    ]
+  }
